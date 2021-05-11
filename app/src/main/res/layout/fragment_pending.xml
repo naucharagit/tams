@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:imeOptions="actionDone"
+        android:paddingLeft="10dp"
+        android:hint="Search"
+        android:id="@+id/et_search"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/ic_baseline_search_24"
+        android:background="@drawable/bg_editext_search"
+        android:singleLine="true"
+        android:lines="1"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tv_header"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scanning Assets OPN."
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:textStyle="italic"
+        android:id="@+id/tv_subheader"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not-Scanned"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_centerInParent="true"/>
+
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efefef"/>
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/lv_assetpendingList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:id="@+id/rcy_scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

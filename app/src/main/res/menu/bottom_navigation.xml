@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/paper"
+        android:title="Opname"/>
+
+    <item
+        android:id="@+id/nav_scan"
+        android:icon="@drawable/scanner"
+        android:title="Scan"/>
+
+    <item
+        android:id="@+id/nav_pending"
+        android:icon="@drawable/checklist"
+        android:title="Pending"/>
+
+    <item
+        android:id="@+id/nav_checkout"
+        android:icon="@drawable/order"
+        android:title="CheckOut"/>
+
+</menu>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan Fragment"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tv_assets_header"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Scanning Assets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_conn_status"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="not connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spn_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efefef"/>
+
+    <SeekBar
+        android:id="@+id/seek_antena"
+        android:progress="50"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="12dp"
+        android:gravity="center"
+        android:text="Antena Power "
+        android:id="@+id/tv_assets_antena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efefef"/>
+
+    <ProgressBar
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/pb_assets"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:minWidth="250dp"
+        android:max="100"
+        android:indeterminate="false"
+        android:progress="27" />
+
+    <TextView
+        android:textSize="12dp"
+        android:layout_marginRight="15dp"
+        android:gravity="right"
+        android:text="Progress 87/150 (58%)"
+        android:id="@+id/tv_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efefef"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:id="@+id/rcy_scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/lv_assetList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

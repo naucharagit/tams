@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tv_subheader"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHECKOUT"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:textStyle="italic"
+        android:id="@+id/tv_header"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scanning Assets OPN."
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_centerInParent="true"/>
+
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efefef"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:background="@drawable/bg_button_checkout"
+            android:layout_centerInParent="true"
+            android:text="Checkout"
+            android:textSize="30sp"
+            android:padding="5dp"
+            android:id="@+id/btn_checkout"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
