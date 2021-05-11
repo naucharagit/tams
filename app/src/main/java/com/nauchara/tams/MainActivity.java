@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 //did nothing lol
-                                Log.d(TAG, "Cancel choose opname header");
                             }
                         })
                         .setIcon(android.R.drawable.ic_dialog_alert)
