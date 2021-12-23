@@ -21,7 +21,7 @@ public class LocationModel {
 
     @Override
     public String toString() {
-        return loc_room;
+        return "["+loc_floor+"] "+loc_room;
     }
 
     public int getLoc_id() {
